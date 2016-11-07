@@ -18,9 +18,7 @@ public class rollfx {
 
 	public void initialize() {
 		rand = new Random();
-		num1 = rand.nextInt(5) + 1;
-		num2 = rand.nextInt(5) + 1;
-		Sum = num1 + num2;
+		
 	}
 
 	 @FXML
@@ -76,30 +74,57 @@ public class rollfx {
 
 	    @FXML
 	    private TextField output;
+	   
 
 	@FXML
 	void rolldice(MouseEvent event) {
+		num1 = rand.nextInt(5) + 1;
+		num2 = rand.nextInt(5) + 1;
+		Sum = num1 + num2;
+		
+		
+		d1ul.setVisible(false);
+		d1lr.setVisible(false);
+		d1ur.setVisible(false);
+		d1ll.setVisible(false);
+		d1ml.setVisible(false);
+		d1mr.setVisible(false);
+		d1mm.setVisible(false);
+		d2ul.setVisible(false);
+		d2lr.setVisible(false);
+		d2ur.setVisible(false);
+		d2ll.setVisible(false);
+		d2ml.setVisible(false);
+		d2mr.setVisible(false);
+		d2mm.setVisible(false);
+		
 		// showing the dots
+		
 		if (num1 == 1) {
 			d1mm.setVisible(true);
+			
 		} else if (num1 == 2) {
 			d1ul.setVisible(true);
 			d1lr.setVisible(true);
+			
 		} else if (num1 == 3) {
 			d1ul.setVisible(true);
 			d1lr.setVisible(true);
 			d1mm.setVisible(true);
+			
 		} else if (num1 == 4) {
 			d1ul.setVisible(true);
 			d1lr.setVisible(true);
 			d1ur.setVisible(true);
 			d1ll.setVisible(true);
+		
 		} else if (num1 == 5) {
 			d1ul.setVisible(true);
 			d1lr.setVisible(true);
 			d1ur.setVisible(true);
 			d1ll.setVisible(true);
 			d1mm.setVisible(true);
+			
 		} else if (num1 == 6) {
 			d1ul.setVisible(true);
 			d1lr.setVisible(true);
@@ -107,6 +132,7 @@ public class rollfx {
 			d1ll.setVisible(true);
 			d1ml.setVisible(true);
 			d1mr.setVisible(true);
+			
 		}
 
 		if (num2 == 1) {
@@ -141,4 +167,7 @@ public class rollfx {
 		output.setText(Integer.toString(Sum));
 
 	}
+
+
 }
+
