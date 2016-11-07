@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cis.rollfx">
+   <children>
+      <Rectangle fx:id="dice1" arcHeight="5.0" arcWidth="5.0" height="141.0" layoutX="63.0" layoutY="139.0" stroke="BLACK" strokeType="INSIDE" width="159.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#82a5a8" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Rectangle fx:id="dice2" arcHeight="5.0" arcWidth="5.0" height="141.0" layoutX="338.0" layoutY="139.0" stroke="BLACK" strokeType="INSIDE" width="159.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#82a5a8" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Circle fx:id="d1ul" fill="DODGERBLUE" layoutX="89.0" layoutY="158.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+      <Circle fx:id="d1ur" fill="DODGERBLUE" layoutX="195.0" layoutY="158.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+      <Circle fx:id="d1mr" fill="DODGERBLUE" layoutX="195.0" layoutY="210.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+      <Circle fx:id="d1lr" fill="DODGERBLUE" layoutX="195.0" layoutY="259.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+      <Circle fx:id="d1ml" fill="DODGERBLUE" layoutX="89.0" layoutY="210.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+      <Circle fx:id="d1ll" fill="DODGERBLUE" layoutX="89.0" layoutY="259.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+      <Circle fx:id="d2ul" fill="DODGERBLUE" layoutX="366.0" layoutY="167.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+      <Circle fx:id="d2ml" fill="DODGERBLUE" layoutX="366.0" layoutY="210.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+      <Circle fx:id="d2ll" fill="DODGERBLUE" layoutX="366.0" layoutY="250.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+      <Circle fx:id="d2ur" fill="DODGERBLUE" layoutX="471.0" layoutY="167.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+      <Circle fx:id="d2mr" fill="DODGERBLUE" layoutX="471.0" layoutY="210.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+      <Circle fx:id="d2lr" fill="DODGERBLUE" layoutX="471.0" layoutY="250.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+      <RadioButton fx:id="roll" layoutX="222.0" layoutY="64.0" mnemonicParsing="false" onMouseClicked="#rolldice" text="Roll dice" />
+      <Circle fx:id="d1mm" fill="DODGERBLUE" layoutX="143.0" layoutY="210.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+      <Circle fx:id="d2mm" fill="DODGERBLUE" layoutX="418.0" layoutY="210.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+      <TextField fx:id="output" layoutX="218.0" layoutY="303.0" prefHeight="46.0" prefWidth="134.0" />
+   </children>
+</AnchorPane>
